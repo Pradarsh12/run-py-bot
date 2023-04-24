@@ -38,7 +38,7 @@ def parse_response(resp: dict) -> dict:
         if resp['Errors'] == 'Too many requests...':
             output['message'] = '''Try after some time.
             \nI may block you if you send too many messages at a very short interval. 
-            \nIf you think you are innocent, please contact @AahnikDaw'''
+            \nIf you think you are innocent, please contact @soonbotmaker0'''
             output['stats'] = 'No information availaible'
         else:
             output['message'] = f'''\
@@ -67,9 +67,9 @@ def results(text: str) -> list:
     '''
 
     result_list = [
-        ('1', 'YouTube', 'https://www.youtube.com/watch?v=nCuQ-7Rw0gM'),
-        ('2', 'Dev Community',
-         'https://dev.to/aahnik/start-chatting-with-python-on-telegram-29ci'),
-        ('3', 'GitHub', 'https://github.com/aahnik/run-py-bot')
+        ('1', 'YouTube', 'https://youtube.com/@GreyMattersYT'),
+        ('2', 'Telegram Channel',
+         'https://t.me/GreyMatter_Bots'),
+        ('3', 'Developer', 'https://t.me/soonbotmaker0')
     ]
     return result_list
